@@ -3300,3 +3300,39 @@ input, select, textarea {
 				}
 
 	}
+
+/* =========================
+   ReggieReady Calm Mode
+   Add to bottom of main.css
+   ========================= */
+
+/* Softer reading background and text contrast (optional but nice) */
+body {
+  background: #ffffff;
+}
+
+/* Calm typography: remove all-caps shouting + reduce tracking */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;      /* was uppercase */
+  letter-spacing: 0.02em;    /* was 0.125em */
+  line-height: 1.35em;       /* was 1.75em for headings */
+}
+
+/* Keep header sections from forcing uppercase in small text */
+header p {
+  text-transform: none;      /* was uppercase */
+  letter-spacing: 0.02em;    /* was 0.075em */
+}
+
+/* Increase comfort for paragraphs (yours is already good; this is just explicit) */
+p {
+  line-height: 1.75em;
+}
+
+/* Optional: reduce “burn-in” by limiting long line length a bit */
+.container {
+  width: 56em;               /* was 51em; tweak if you want wider/narrower */
+}
+.container.medium {
+  width: 42em;               /* was 38.25em */
+}
